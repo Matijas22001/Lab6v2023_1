@@ -1,0 +1,20 @@
+<html>
+<body>
+<center>
+    <input type="text" id="name"/><br>
+    <input type="text" id="date"/><br>
+    <button onclick="hello()">Przywitaj się</button><br>
+    <button onclick="whatdate()">Data?</button><br>
+</center>
+<script type="text/javascript">
+    function hello()
+    {
+        activity.sayHello(document.getElementById("name").value);
+    }
+    function whatdate()
+    {
+        document.getElementById("date").value=activity.getDate();
+    }
+</script>
+</body>
+</html>
